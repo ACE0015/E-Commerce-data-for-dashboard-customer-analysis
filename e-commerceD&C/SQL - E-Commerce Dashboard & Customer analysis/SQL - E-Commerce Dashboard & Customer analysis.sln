@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# SQL Server Management Studio Version 21
+VisualStudioVersion = 17.14.36127.28 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{4F2E2C19-372F-40D8-9FA7-9D2138C6997A}") = "SQL - E-Commerce Dashboard & Customer analysis", "SQL - E-Commerce Dashboard & Customer analysis.ssmssqlproj", "{20CF3B01-3717-741C-873F-FF3857D1BB6E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Default|Default = Default|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{20CF3B01-3717-741C-873F-FF3857D1BB6E}.Default|Default.ActiveCfg = Default
+		{22621A2C-71D4-4D8C-8733-45FBC183DA38}.Default|Default.ActiveCfg = Default
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FA2D8F74-56BE-4C57-950F-1E580F08E720}
+	EndGlobalSection
+EndGlobal
