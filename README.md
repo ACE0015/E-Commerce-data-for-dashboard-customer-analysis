@@ -55,3 +55,31 @@
 > This KPI measures customer loyalty and the frequency of repeat business.
 * 💡 Why it's important: A high number indicates strong customer retention. It's a key indicator of customer satisfaction and brand loyalty.
 * Dashboard Visualization: A KPI Card.
+
+
+# 📊 Live E-Commerce Dashboard - T-SQL Reporting Script
+>* This repository contains a comprehensive T-SQL script designed to power a live e-commerce analysis dashboard. By querying the AdventureWorks2022 database, this single script efficiently returns multiple, pre-aggregated datasets ready for visualization in tools like Power BI, Tableau, or SSRS.
+>* The primary advantage of this approach is efficiency. Instead of the dashboarding tool making multiple separate calls to the database, it makes one call and receives all the necessary data at once, reducing network latency and database load.
+
+**✨ Key Features**
+* Single Execution, Multiple Results: Returns five distinct data tables in one go.
+* Optimized for Live Reporting: Designed to be run on a schedule (e.g., every hour) to keep dashboards fresh.
+* Performance-Tuned: Uses READ UNCOMMITTED to prevent read queries from blocking operational transactions.
+* Comprehensive Insights: Covers everything from high-level KPIs and sales trends to top products and customer segmentation.
+
+**🛠️ Tech Stack**
+* Database: Microsoft AdventureWorks2022
+* Query Language: T-SQL
+* IDE: SQL Server Management Studio (SSMS) v21+
+
+## 🔌 How I Integrate with a BI Tool (I Used Power BI)
+* 1.Connect to Data: In your BI tool, select "SQL Server" as the data source. Enter your server and database (AdventureWorks2022) credentials.
+* 2.Use the Script as a Query: In the connection options, instead of selecting tables, choose the "Advanced options" and paste the entire T-SQL script from above into the "SQL statement" box.
+* 3.Load Data: When you connect, the BI tool will execute the script and recognize that it returns multiple tables (e.g., Power BI's Navigator will show them as Query1, Result Set 2, Result Set 3, etc.).
+* 4.Rename and Model: Load all the resulting tables. It is a best practice to rename them to something meaningful (e.g., KPIs, SalesOverTime, TopProducts).
+* 5.Build Visuals: Drag and drop fields from each of your new tables onto the dashboard canvas to build your visuals.
+>* KPIs table -> Use for KPI cards.
+>* SalesOverTime table -> Use for a line chart.
+>* TopProducts table -> Use for a horizontal bar chart.
+>* And so on...
+* 6.Schedule Refresh: Configure a scheduled refresh in the BI service to run the script periodically and keep your dashboard data up to date.
