@@ -3,7 +3,7 @@
 
 **🚀 Project Overview**
 * The main objective is to query a relational database to uncover trends and metrics related to:
-> Overall Sales Performance
-> Product Popularity
-> Geographical Sales Distribution
-> Customer Value and Loyalty
+>* Overall Sales Performance
+>* Product Popularity
+>* Geographical Sales Distribution
+>* Customer Value and Loyalty
