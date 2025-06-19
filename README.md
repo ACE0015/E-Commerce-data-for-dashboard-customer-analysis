@@ -73,9 +73,9 @@
 * IDE: SQL Server Management Studio (SSMS) v21+
 
 ## 🔌 How I Integrate with a BI Tool (I Used Power BI)
-* 1.Connect to Data: In your BI tool, select "SQL Server" as the data source. Enter your server and database (AdventureWorks2022) credentials.
+* 1.Connect to Data: In Power BI tool, select "SQL Server" as the data source. Enter your server and database (AdventureWorks2022) credentials.
 * 2.Use the Script as a Query: In the connection options, instead of selecting tables, choose the "Advanced options" and paste the entire T-SQL script from above into the "SQL statement" box.
-* 3.Load Data: When you connect, the BI tool will execute the script and recognize that it returns multiple tables (e.g., Power BI's Navigator will show them as Query1, Result Set 2, Result Set 3, etc.).
+* 3.Load Data: When we connect, the Power BI tool will execute the script and recognize that it returns multiple tables (e.g., For my case Power BI's Navigator will show them as Query1, Result Set 2, Result Set 3, etc.).
 * 4.Rename and Model: Load all the resulting tables. It is a best practice to rename them to something meaningful (e.g., KPIs, SalesOverTime, TopProducts).
 * 5.Build Visuals: Drag and drop fields from each of your new tables onto the dashboard canvas to build your visuals.
 >* KPIs table -> Use for KPI cards.
